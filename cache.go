@@ -1,7 +1,5 @@
 package cache
 
-import "fmt"
-
 type Cache map[string]interface{}
 
 func New() Cache {
@@ -20,8 +18,8 @@ func (c Cache) Delete(key string) {
 	delete(c, key)
 }
 
-func (c Cache) Show() {
-	for k, v := range c {
-		fmt.Println("key: ", k, "value: ", v)
-	}
-}
+// func (c Cache) Show() {
+// 	for k, v := range c {
+// 		fmt.Println("key: ", k, "value: ", v)
+// 	}
+// }
