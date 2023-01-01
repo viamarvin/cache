@@ -1,13 +1,18 @@
 # cache
 A simple in-memory cache package
 
+Add in go.mod file 
+```
+module github.com/viamarvin/cache
+```
+
 ## Example
 ```
 package main
 
 import (
 	"fmt"
-	"podrezov.me/cim"
+	"github.com/viamarvin/cache"
 )
 
 func main() {
